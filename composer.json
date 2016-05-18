@@ -1,0 +1,17 @@
+{
+    "name": "micschk/silverstripe-cookiebar",
+    "description": "Drop-in configurable notice about cookies",
+    "type": "silverstripe-module",
+    "keywords": ["silverstripe","cookies"],
+    "authors": [
+    {
+        "name": "micschk"
+    }],
+    "require": {
+        "silverstripe/framework": "~3.0"
+    },
+	"extra": {
+		"installer-name": "cookie-bar"
+	}
+    
+}

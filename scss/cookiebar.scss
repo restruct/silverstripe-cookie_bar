@@ -1,0 +1,91 @@
+
+#cookiebar {
+	border-top: 2px solid #999;
+	border-bottom: 2px solid #999;
+	
+	background-color: #eeeeee;
+	background-image: -webkit-linear-gradient(top, #eeeeee, #ffffff);
+	background-image: -moz-linear-gradient(top, #eeeeee, #ffffff);
+	background-image: -o-linear-gradient(top, #eeeeee, #ffffff);
+	background-image: -ms-linear-gradient(top, #eeeeee, #ffffff);
+	background-image: linear-gradient(top, #eeeeee, #ffffff);
+	
+	.container { 
+		padding: 20px;
+	}
+		
+	.description {
+		width: 80%;
+		float: left;
+		padding-left: 100px;
+
+		img {
+			float: left;
+			margin-left: -100px;
+			max-width: 80px;
+			height: auto;
+		}
+		p.notification { font-weight: bold; }
+		a.more {
+			display: none;
+		}
+	}
+	.links {
+		width: 20%;
+		float: left;
+		padding-left: 30px;
+	}
+
+	#acceptcookies {
+		display: block;
+		padding: 9px 14px;
+		margin: 30px 0 0; 
+		font-size: 15px;
+		font-weight: bold;
+		color: #FFFFFF;
+		text-align: center;
+		text-shadow:0 -1px 0 rgba(0, 0, 0, 0.3);
+		background-color: limegreen;
+
+		background-color: #68b624;
+		background-image: -webkit-linear-gradient(top, #a1d23b, #68b624);
+		background-image: -moz-linear-gradient(top, #a1d23b, #68b624);
+		background-image: -o-linear-gradient(top, #a1d23b, #68b624);
+		background-image: -ms-linear-gradient(top, #a1d23b, #68b624);
+		background-image: linear-gradient(top, #a1d23b, #68b624);
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		border: 1px solid #8dad62;
+		-webkit-box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.3), inset 0px 1px 1px 0 rgba(255, 255, 255, 0.6);
+		-moz-box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.3), inset 0px 1px 1px 0 rgba(255, 255, 255, 0.6);
+		box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.3), inset 0px 1px 1px 0 rgba(255, 255, 255, 0.6);
+
+		&:hover{
+			color:#FFFFFF;
+			text-decoration:none;
+			background-color:#666666;
+		}
+	}
+	
+	.infolink {
+		padding: 10px;
+		display: block;
+		
+		.glyphicon:before { font-size: 80%; }
+	}
+	
+	.icon-fallback { display: none; }
+	
+}
+@media (max-width: 991px) {
+	#cookiebar {
+		.description { width: 100%; }
+		.links { width: 100%; padding-left: 100px; }
+		a.infolink, #acceptcookies {
+			margin-top: 0px;
+			display: inline-block;
+			width: auto;
+		} 
+	}
+}
